@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Clima | Randys Machado</title>
+  </head>
+  <body>
+    <h1 class="title">Clima</h1>
+
+    <form class="search__form" id="form">
+      <input type="search" class="search__input" id="searchInput" />
+      <button class="button">Buscar</button>
+    </form>
+
+    <section class="result">
+      <img src="" />
+      <p class="description"></p>
+      <h2 class="temp"></h2>
+      <h3 class="city-name"></h3>
+
+      <div class="more-info">
+        <div class="box-info">
+          <img src="/images/icons/humidity.png" />
+          <p class="humidity"></p>
+        </div>
+
+        <div class="box-info">
+          <img src="/images/icons/wind.png" />
+          <p class="wind"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="warning" id="warning" data-warning></div>
+
+    <footer class="footer">
+      Feito com ❤️ por <a href="https://randys.dev" target="_blank">randys</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

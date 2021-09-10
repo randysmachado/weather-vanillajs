@@ -1,0 +1,186 @@
+:root {
+  --background-color: #101014;
+  --surface: #1f1f21;
+
+  --yellow: #eab359;
+  --bg-yellow: #53482c;
+
+  --blue: #4469e4;
+  --bg-blue: #2e3a53;
+
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 9.6rem;
+}
+
+h2 {
+  font-size: 6.4rem;
+}
+
+.title {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+.search__form {
+  display: flex;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  max-width: 320px;
+  padding: 1.6rem;
+  margin-right: 1rem;
+  border-radius: 1.6rem;
+  background-color: var(--surface);
+  color: var(--white);
+
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  background: none;
+  border: none;
+
+  display: block;
+  padding: 1.5rem 3rem;
+  width: 100;
+  cursor: pointer;
+
+  background: var(--yellow);
+  color: var(--background-color);
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  background-size: 100% auto;
+  border-radius: 1.6rem;
+
+  transition: 0.5s;
+}
+
+.button:hover {
+  filter: brightness(70%);
+}
+
+.result {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 680px;
+  padding: 3rem 8rem;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.result img {
+  width: 120px;
+}
+
+.result .temp {
+  font-size: 10rem;
+  margin: 3rem 0;
+}
+
+.result .description {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.result .city-name {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 1.6rem;
+  padding: 2rem 3rem;
+  margin-top: 2rem;
+  background-color: var(--surface);
+  text-align: center;
+}
+
+.box-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-info img {
+  width: 4.7rem;
+}
+
+.more-info p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 1.6rem;
+}
+
+.warning {
+  color: var(--yellow);
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.icons {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.footer {
+  font-size: 1.8rem;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem;
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  transition: background-color 0.3s;
+}
+
+.footer a:hover {
+  background-color: var(--yellow);
+  color: var(--background-color);
+}
